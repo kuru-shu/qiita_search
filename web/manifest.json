@@ -1,6 +1,6 @@
 {
-    "name": "qiita_app",
-    "short_name": "qiita_app",
+    "name": "qiita_search",
+    "short_name": "qiita_search",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

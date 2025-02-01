@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="qiita_app"
+        android:label="qiita_search"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
