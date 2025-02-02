@@ -10,6 +10,18 @@ class SearchScreen extends StatefulWidget {
 
   @override
   State<SearchScreen> createState() => _SearchScreenState();
+}
+
+class _SearchScreenState extends State<SearchScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Qiita Search"),
+      ),
+      body: Container(),
+    );
+  }
 
   Future<List<Article>> searchQiita(String keyword) async {
     final uri = Uri.https('qiita.com', '/api/v2/items', {
@@ -29,17 +41,5 @@ class SearchScreen extends StatefulWidget {
     } else {
       return [];
     }
-  }
-}
-
-class _SearchScreenState extends State<SearchScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Qiita Search"),
-      ),
-      body: Container(),
-    );
   }
 }
